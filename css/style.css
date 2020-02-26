@@ -19,5 +19,7 @@
 
 .chat_sidebar{
     grid-column: 6/7;
+    border-left: 1px solid #CCC;
+    border-top: 1px solid #CCC;
 }
 
