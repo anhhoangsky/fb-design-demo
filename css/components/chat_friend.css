@@ -1,20 +1,25 @@
 .friend{
     width: 100%;
     display: flex;
+    justify-content: stretch;
   }
   .friend div{
       padding: 4px 5px;
   }
-  
-  .friend:first-child{
-    flex-shrink: 3;
-  }
+
+
   .friend .ava img{
     width: 30px;
     height: 30px;
     border-radius: 50%;
   }
-  .f_name, .f_active{
+  .f_active{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .f_name{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -22,7 +27,7 @@
   
   
   .f_name{
-    flex-grow: 3;
+    flex-grow: 2;
     font-size: 0.85rem;
   
   }
@@ -33,6 +38,11 @@
     font-size: 0.7rem;
   }
   
+  .friend .ava{
+    width: 40px;
+    flex-grow: 1;
+  }
+
   .friend:hover{
     background-color: #E9E9E9;
   }

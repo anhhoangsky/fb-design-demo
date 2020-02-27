@@ -18,7 +18,7 @@
         align-items: center;
     } */
 
-    .logo{
+    .logo_home {
         background-image: url(../../svg/facebook-square-brands.svg);
         background-repeat: no-repeat;
         background-position: center;
@@ -29,17 +29,17 @@
         /* box-shadow: ; */
     }
 
-    .nav_left{
+    .nav_left {
         height: 100%;
         display: flex;
         align-items: center;
         padding: 4px 0px;
         grid-column: 2/4;
+        justify-content: space-between;
     }
-
-    .nav_right{
-        grid-column: 4/6;
+    .flex_left{
         display: flex;
+        height: 100%;
         align-items: center;
     }
 
@@ -57,5 +57,90 @@
         text-decoration: none;
         width: 30px;
         height: 30px;
+        padding: 3px;
     }
-/*  */
+    .nav_left a b{
+        border-right: 1px solid rgba(152, 89, 89, 0.42);
+        padding-right: 0;
+    }
+
+    .nav_left a:visited{
+        color: #fff;
+    }
+
+    .nav_left a:hover{
+        background-color: rgb(57, 96, 173);
+    }
+
+    .nav_left a:last-child{     
+        width: 90px !important;
+        height: 30px !important;
+        display: flex;
+        align-items: center;
+        padding-right: 0;
+        border-top-left-radius: 1px;
+        border-bottom-left-radius: 1px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        justify-self: flex-end;
+    }
+
+    .img_user{
+        background-image: url(https://picsum.photos/200/300);
+        background-repeat: no-repeat;
+        background-position: center;
+        /* border: ; */
+        width: 50%;
+        height: 90%;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 3px;
+        /* box-shadow: ; */
+    }
+
+/* nav right */
+.nav_right {
+    grid-column: 4/6;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav_right .nav-btn a{     
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    height: 30px !important;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.nav_right .nav-btn a b{
+    border-right: 1px solid rgba(152, 89, 89, 0.42);
+    width: 80px;
+}
+
+.nav_right .nav-btn:nth-child(2) a b{
+    border-right: 1px solid rgba(152, 89, 89, 0.42);
+    width: 40px;
+}
+
+
+.nav_right .nav-btn a:hover{
+    background-color: rgb(57, 96, 173);
+}
+
+.nav_right .nav-btn a:visited{
+    color: #fff;
+}
+
+.nav_right .nav-btn{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}

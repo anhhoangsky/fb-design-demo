@@ -22,8 +22,16 @@
 }
 
 .chat_sidebar{
+    position: relative;
     grid-column: 6/7;
     border-left: 1px solid #CCC;
     border-top: 1px solid #CCC;
+}
+
+.pos_chat_sidebar{
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 999;
 }
 
