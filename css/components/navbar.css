@@ -1,0 +1,61 @@
+/* Nav */
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 2fr 1fr 1.5fr;
+        position: fixed;
+        background-color: #4267B2;
+        top: 0;
+        width: 100%;
+        height: 6vh;
+        color: #fff;
+        font-size: 0.85rem;
+
+    }
+
+
+    /* .navbar  {
+        display: flex;
+        align-items: center;
+    } */
+
+    .logo{
+        background-image: url(../../svg/facebook-square-brands.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        /* border: ; */
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        /* box-shadow: ; */
+    }
+
+    .nav_left{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 4px 0px;
+        grid-column: 2/4;
+    }
+
+    .nav_right{
+        grid-column: 4/6;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav_left input{
+        width: 450px;
+        height: 70% ;
+        border: thin;
+        border-radius: 2px;
+        margin-left: 5px;
+        padding-left: 10px;
+        outline: unset;
+    }
+
+    .nav_left a{     
+        text-decoration: none;
+        width: 30px;
+        height: 30px;
+    }
+/*  */
